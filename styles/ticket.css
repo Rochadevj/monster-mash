@@ -1,0 +1,93 @@
+.tickets-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url('/assets/Section.png'); /* substitua pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    color: #fff;
+}
+
+.section-title {
+    font-family: 'Metal Mania', cursive;
+    font-size: 65px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ticket-card {
+    background-color: rgba(78, 59, 90, 0.9); /* Cor de fundo do card com opacidade */
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.ticket-image {
+    width: 153.773px;
+height: 125.007px;
+flex-shrink: 1;
+object-fit: contain;
+ 
+}
+
+.ticket-title {
+    font-family: 'Metal Mania', cursive;
+    font-size: 34px;
+    color: #bf82e0;
+    margin: 10px 0 5px;
+}
+
+.ticket-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.ticket-price {
+    font-size: 38px;
+    color: #f6583e;
+    margin: 15px 0;
+    font-family: 'Metal Mania', cursive;
+}
+
+.ticket-features {
+    list-style-type: none;
+    padding: 0;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.ticket-features li::before {
+    content: '•';
+    color: #f39c12;
+    padding-right: 8px;
+}
+
+.ticket-button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ticket-button:hover {
+    background-color: #ff4500;
+}

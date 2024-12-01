@@ -1,0 +1,86 @@
+.home {
+    text-align: center;
+    padding: 50px 0; /* Diminui o padding para aproximar os elementos do topo */
+    height: 100vh;
+    background-image: url('/assets/171d878b-hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha os elementos no topo */
+}
+
+h1 {
+    font-family: 'Metal Mania', cursive;
+    font-size: 90px;
+    margin: 20px 0; /* Ajusta o espaçamento, pode ser removido ou diminuído */
+}
+
+h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin: 15px 0; /* Ajusta o espaçamento, pode ser removido ou diminuído */
+    font-weight: 400;
+}
+
+h4 {
+    color: #BF82E0; /* Cor personalizada para o H4 */
+}
+
+button {
+    display: block; /* Torna o botão um elemento de bloco */
+    margin: 0 auto; /* Define margens automáticas à esquerda e à direita */
+    /* outras propriedades do botão */
+    height: 52px;
+    min-width: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #222;
+    font-weight: bold;
+    margin-top: 20px; /* Mantém o espaçamento entre o botão e os outros elementos */
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+        max-width: 800px;
+        padding: 20px 80px;  /* Aumenta o padding horizontal */
+    
+}
+
+button:hover {
+    background-color: #BF82E0;
+    color: #fff;
+}
+
+/* Responsivo - Ajustes para dispositivos menores */
+@media (max-width: 480px) {
+    .menu {
+        top: 15px; /* Ajuste para o menu na tela */
+        left: 10px; /* Margem da borda esquerda */
+    }
+
+    .home {
+        padding-top: 300px; /* Aumentei o padding-top para empurrar os elementos mais para baixo no celular */
+        justify-content: flex-start; /* Garante que os elementos não fiquem tão no topo */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Reduz o tamanho do título */
+        margin-bottom: 30px; /* Aumenta o espaço entre o título e o subtítulo */
+    }
+
+    h2, h3, h4 {
+        font-size: 1.2rem; /* Reduz o tamanho dos subtítulos */
+        margin-bottom: 15px; /* Aumenta o espaçamento entre os subtítulos */
+    }
+
+    button {
+        width: 100%; /* O botão ocupa toda a largura */
+        max-width: 300px; /* Limita a largura do botão */
+        height: 50px; /* Ajusta a altura */
+        font-size: 1rem; /* Ajuste o tamanho do texto */
+        margin-top: 40px; /* Aumenta ainda mais o espaço acima do botão */
+    }
+}

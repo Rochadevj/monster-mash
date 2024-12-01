@@ -1,0 +1,130 @@
+@import url("styles/header.css");
+@import url("styles/about.css");
+@import url("styles/expect.css");
+@import url("styles/host.css");
+@import url("styles/ticket.css");
+@import url("styles/news.css");
+@import url("styles/footer.css");
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;  /* Diminui o padding para trazer os elementos mais para cima */
+    position: absolute;
+    width: 100%;
+    top: 0;  /* Mantém o topo fixado no topo da página */
+    left: 0;
+    background: transparent;
+    z-index: 10;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px; /* Diminui o tamanho da fonte para telas maiores */
+        margin: 20px 0;
+    }
+    
+    .about {
+        flex-direction: column; /* Coloca a imagem e o conteúdo em coluna */
+        padding: 40px 15px; /* Reduz o padding para telas menores */
+        min-height: auto; /* Remove a altura mínima */
+    }
+    
+    .about-content {
+        flex-direction: column; /* Muda a direção para coluna */
+        gap: 20px; /* Reduz o espaçamento entre elementos */
+        align-items: center; /* Centraliza os elementos */
+    }
+    
+    .about-image {
+        max-width: 85%; /* Reduz o tamanho da imagem */
+        margin-right: 0; /* Remove o espaço à direita */
+        margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+    }
+    
+    .about-text h2 {
+        font-size: 50px; /* Reduz o tamanho do título */
+        text-align: center; /* Centraliza o título */
+    }
+
+    .about-icons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start; /* Alinha todos os ícones à esquerda */
+        margin-top: 10px;
+    }
+
+    .icon-item {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        text-align: left;
+    }
+
+    .icon-item img {
+        width: 35px; /* Aumenta o tamanho do ícone */
+        height: 35px;
+    }
+
+    .icon-item span {
+        font-size: 18px; /* Aumenta o tamanho do texto dos ícones */
+    }
+
+    .about-text p {
+        font-size: 21px;
+        text-align: left; /* Alinha o texto do parágrafo à esquerda */
+    }
+    
+    .expect-content {
+        flex-direction: column;
+        align-items: flex-start; /* Alinha o conteúdo à esquerda */
+        padding: 20px;
+    }
+
+    .expect-text {
+        width: 100%;
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    .expect-text h2 {
+        font-size: 48px;
+        text-align: left; /* Alinha o título à esquerda */
+    }
+
+    .expect-text p {
+        font-size: 16px;
+        text-align: justify; /* Justifica o texto */
+    }
+
+    .btn-expect {
+        margin-bottom: 40px;
+    }
+    
+    .expect-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .card {
+        width: 80%; /* Ajuste essa largura conforme necessário */
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+

@@ -1,0 +1,57 @@
+
+.hosts-section {
+    text-align: center;
+    padding: 100px 40px;
+    background-color: #3e2b47;
+    color: #fff;
+
+}
+
+.hosts-title {
+    font-family: 'Metal Mania', cursive;
+    font-size: 65px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.hosts-intro {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.hosts-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.host-card {
+    background-color: #4e3b5a;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.host-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.host-name {
+    font-family: 'Metal Mania', cursive;
+    font-size: 30px;
+    color: #BF82E0;
+    margin: 10px 0 5px;
+}
+
+.host-role {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #e7e6e6;
+}

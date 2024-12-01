@@ -1,0 +1,91 @@
+.expect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-image: url('/assets/Section.png'); /* Adiciona a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área da seção */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    color: #fff; /* Mantém o texto branco */
+    min-height: 80vh; /* Garante uma altura mínima maior para a seção */
+}
+
+.expect-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    
+    
+}
+
+.expect-text {
+    width: 40%;
+    color: #ccc;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+}
+
+.expect-text h2 {
+    font-family: 'Metal Mania', cursive;
+    font-size: 66px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.expect-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #ccc;
+    width: 100%; /* Ajusta para 100% da largura do container */
+    flex-shrink: 0;
+}
+
+.btn-expect {
+    display: inline-flex;
+    height: 52px;
+    min-width: 150px;
+    padding: 13px 0px 13px 5px;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 100px;
+background: var(--color-red-60, #F6583E);
+}
+
+.expect-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 50%;
+}
+
+.card {
+    background-color: #3e2b47;
+    color: #fff;
+    padding: 29px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-family: 'Metal Mania', cursive;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #ccc;
+}
