@@ -54,33 +54,42 @@ button:hover {
     color: #fff;
 }
 
+
 /* Responsivo - Ajustes para dispositivos menores */
 @media (max-width: 480px) {
     .menu {
-        top: 15px; /* Ajuste para o menu na tela */
-        left: 10px; /* Margem da borda esquerda */
+        top: 5px; /* Move o menu mais para cima */
+        left: 10px; /* Mantém a margem da borda esquerda */
     }
 
     .home {
-        padding-top: 300px; /* Aumentei o padding-top para empurrar os elementos mais para baixo no celular */
-        justify-content: flex-start; /* Garante que os elementos não fiquem tão no topo */
+        padding-top: 200px; /* Reduz o padding-top para trazer os elementos mais para cima */
+        justify-content: flex-start; /* Garante alinhamento no início */
     }
 
     h1 {
-        font-size: 2.5rem; /* Reduz o tamanho do título */
-        margin-bottom: 30px; /* Aumenta o espaço entre o título e o subtítulo */
+        font-size: 2.5rem; /* Mantém o tamanho reduzido do título */
+        margin-bottom: 20px; /* Diminui o espaço entre o título e o subtítulo */
     }
 
     h2, h3, h4 {
-        font-size: 1.2rem; /* Reduz o tamanho dos subtítulos */
-        margin-bottom: 15px; /* Aumenta o espaçamento entre os subtítulos */
+        font-size: 1.2rem; /* Mantém o tamanho reduzido dos subtítulos */
+        margin-bottom: 10px; /* Reduz o espaçamento entre subtítulos */
     }
 
     button {
-        width: 100%; /* O botão ocupa toda a largura */
+        width: 100%; /* O botão continua ocupando toda a largura */
         max-width: 300px; /* Limita a largura do botão */
-        height: 60px; /* Ajusta a altura */
-        font-size: 1rem; /* Ajuste o tamanho do texto */
-        margin-top: 40px; /* Aumenta ainda mais o espaço acima do botão */
+        height: 60px; /* Reduz levemente a altura */
+        font-size: 1rem; /* Tamanho do texto ajustado */
+        margin-top: 20px; /* Reduz o espaço acima do botão */
+    }
+
+    .logo {
+        position: relative; /* Mantém a logo na posição padrão */
+        top: auto; /* Garante que a logo não seja movida */
     }
 }
+
+
+
