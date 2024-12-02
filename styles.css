@@ -30,12 +30,35 @@ header {
 }
 
 
+html, body {
+    overflow-x: hidden; 
+    width: 100%; 
+    box-sizing: border-box; /
+}
+
+
+* {
+    box-sizing: inherit;
+}
+
+
+img, video, iframe {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.container {
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+section, div, header, footer {
+    overflow: hidden; 
+}
+
+
 @media (max-width: 768px) {
 
-       body {
-        overflow-x: hidden; 
-    }
-    
     h1 {
         font-size: 30px;
         margin: 20px 0;
