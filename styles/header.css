@@ -79,7 +79,7 @@ button:hover {
     button {
         width: 100%; /* O botão ocupa toda a largura */
         max-width: 300px; /* Limita a largura do botão */
-        height: 50px; /* Ajusta a altura */
+        height: 60px; /* Ajusta a altura */
         font-size: 1rem; /* Ajuste o tamanho do texto */
         margin-top: 40px; /* Aumenta ainda mais o espaço acima do botão */
     }
