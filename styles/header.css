@@ -58,12 +58,12 @@ button:hover {
 /* Responsivo - Ajustes para dispositivos menores */
 @media (max-width: 480px) {
     .menu {
-        top: 5px; /* Move o menu mais para cima */
+        top: 2px; /* Move o menu mais para cima */
         left: 10px; /* Mantém a margem da borda esquerda */
     }
 
     .home {
-        padding-top: 200px; /* Reduz o padding-top para trazer os elementos mais para cima */
+        padding-top: 170px; /* Reduz o padding-top para trazer os elementos mais para cima */
         justify-content: flex-start; /* Garante alinhamento no início */
     }
 
