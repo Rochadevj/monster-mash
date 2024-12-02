@@ -1,46 +1,55 @@
+
 .newsletter-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url('/assets/Section.png'); /* substitua pelo caminho da sua imagem de fundo */
-    color: #ffffff; /* Texto branco */
+    text-align: center; 
+    padding: 50px 20px; 
+    background-image: url('/assets/Section.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
 
 .newsletter-title {
-    font-family: 'Metal Mania', cursive; /* Fonte do título */
-    font-size: 5rem;
+    font-family: 'Metal Mania', cursive;
+    font-size: 65px;
+    color: #fff;
     margin-bottom: 10px;
 }
 
 .newsletter-subtitle {
-    font-family: 'Barlow', sans-serif;
-    font-size: 1.4rem;
-    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: #ccc;
+    margin-bottom: 40px;
 }
 
 .newsletter-form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; /* Espaço menor entre os elementos */
-    flex-wrap: wrap; /* Permite que os elementos se ajustem ao espaço disponível */
-    margin-bottom: 30px;
+    justify-content: center; 
+    align-items: baseline; 
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 500px;
 }
 
 .email-input {
     font-size: 1rem;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    outline: none;
-    width: 300px;
     padding: 15px 20px;
+    outline: none;
+    width: 100%; 
     box-sizing: border-box;
 }
 
 .newsletter-button {
     padding: 15px 30px;
     font-size: 1rem;
-    background-color: #DAA520; /* Cor dourada */
-    color: #2d2d2d; /* Texto escuro */
+    background-color: #DAA520;
+    color: #2d2d2d;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -48,42 +57,20 @@
 }
 
 .newsletter-button:hover {
-    background-color: #b8860b; /* Dourado mais escuro ao passar o mouse */
+    background-color: #b8860b;
 }
 
-.newsletter-image-container {
-    margin-top: 30px;
-}
 
-.newsletter-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
+/* Responsividade */
 @media (max-width: 480px) {
-    .newsletter-title {
-        font-size: 2.5rem; /* Reduz ainda mais o tamanho do título */
-    }
-    
-    .newsletter-subtitle {
-        font-size: 1rem; /* Ajusta o subtítulo */
-    }
-
-    .email-input {
-        width: 200px; /* Diminui mais o campo de email */
-        margin: 0 10px;
-    }
-
-    .newsletter-button {
-        width: 200px;
-        padding: 15px;
-        font-size: 0.8rem;
-        margin: 0 10px;
-    }
-
     .newsletter-form {
-        flex-direction: column; /* Empilha os elementos verticalmente no celular */
-        gap: 15px;
+        flex-wrap: wrap; 
+        gap: 15px; 
+    }
+
+    .email-input,
+    .newsletter-button {
+        width: 100%; 
+        max-width: none;
     }
 }
