@@ -13,16 +13,17 @@ body {
     padding: 0;
     background-color: #222;
     color: #fff;
+     overflow-x: hidden; 
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;  /* Diminui o padding para trazer os elementos mais para cima */
+    padding: 10px 20px; 
     position: absolute;
     width: 100%;
-    top: 0;  /* Mantém o topo fixado no topo da página */
+    top: 0;  
     left: 0;
     background: transparent;
     z-index: 10;
@@ -31,37 +32,36 @@ header {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 30px; /* Diminui o tamanho da fonte para telas maiores */
+        font-size: 30px;
         margin: 20px 0;
     }
     
     .about {
-        flex-direction: column; /* Coloca a imagem e o conteúdo em coluna */
-        padding: 40px 15px; /* Reduz o padding para telas menores */
-        min-height: auto; /* Remove a altura mínima */
+        flex-direction: column; 
+        padding: 40px 15px;
+        min-height: auto; 
     }
     
     .about-content {
-        flex-direction: column; /* Muda a direção para coluna */
-        gap: 20px; /* Reduz o espaçamento entre elementos */
-        align-items: center; /* Centraliza os elementos */
+        flex-direction: column; 
+        gap: 20px; 
+        align-items: center; 
     }
     
     .about-image {
-        max-width: 85%; /* Reduz o tamanho da imagem */
-        margin-right: 0; /* Remove o espaço à direita */
-        margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+        max-width: 85%; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
     }
     
     .about-text h2 {
-        font-size: 50px; /* Reduz o tamanho do título */
-        text-align: center; /* Centraliza o título */
+        font-size: 50px; 
     }
 
     .about-icons {
         flex-direction: column;
         gap: 15px;
-        align-items: flex-start; /* Alinha todos os ícones à esquerda */
+        align-items: flex-start; 
         margin-top: 10px;
     }
 
@@ -73,38 +73,38 @@ header {
     }
 
     .icon-item img {
-        width: 35px; /* Aumenta o tamanho do ícone */
+        width: 35px;
         height: 35px;
     }
 
     .icon-item span {
-        font-size: 18px; /* Aumenta o tamanho do texto dos ícones */
+        font-size: 18px; 
     }
 
     .about-text p {
         font-size: 21px;
-        text-align: left; /* Alinha o texto do parágrafo à esquerda */
+        text-align: left; 
     }
     
     .expect-content {
         flex-direction: column;
-        align-items: flex-start; /* Alinha o conteúdo à esquerda */
+        align-items: flex-start; 
         padding: 20px;
     }
 
     .expect-text {
         width: 100%;
-        text-align: left; /* Alinha o texto à esquerda */
+        text-align: left;
     }
 
     .expect-text h2 {
         font-size: 48px;
-        text-align: left; /* Alinha o título à esquerda */
+        text-align: left;
     }
 
     .expect-text p {
         font-size: 16px;
-        text-align: justify; /* Justifica o texto */
+        text-align: justify;
     }
 
     .btn-expect {
@@ -119,7 +119,7 @@ header {
     }
     
     .card {
-        width: 80%; /* Ajuste essa largura conforme necessário */
+        width: 80%; 
         margin-bottom: 20px;
     }
 
